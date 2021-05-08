@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansbold"
+        android:text="سوال خود را بپرسید :"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/messageSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:minLines="4"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:gravity="top|right"
+        android:fontFamily="@font/iransansbold"
+        android:hint="متن سوال"
+        android:inputType="textMultiLine"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/SendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/ic_baseline_send_24"
+        android:text="ارسال"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/messageSoal"
+        app:layout_constraintStart_toStartOf="@+id/messageSoal"
+        app:layout_constraintTop_toBottomOf="@+id/messageSoal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
